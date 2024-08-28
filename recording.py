@@ -4,7 +4,6 @@ import numpy as np
 from scipy.fft import fft as fft_transform
 import os as osys
 
-# กำหนดค่าพารามิเตอร์สำหรับการบันทึก
 FMT = pya.paInt16
 CH = 1
 RATE = 44100
@@ -14,7 +13,6 @@ FREQ_DIR = "frequency"
 OUT_FILE = osys.path.join(OUT_DIR, "output.wav")
 TAPE_FILE = osys.path.join(FREQ_DIR, "tape.txt")
 
-# สร้างโฟลเดอร์ถ้ายังไม่มี
 osys.makedirs(OUT_DIR, exist_ok=True)
 osys.makedirs(FREQ_DIR, exist_ok=True)
 
