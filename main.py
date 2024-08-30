@@ -1,8 +1,8 @@
 import keyboard as kb
-from recording import Recorder as Rec
+from recording import Recorder
 
 def main():
-    rec = Rec()
+    rec = Recorder()
 
     print("Press '1' to start recording, '0' to stop recording, 'q' to quit.")
 
